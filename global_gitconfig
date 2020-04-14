@@ -6,3 +6,5 @@
 	co = checkout
 [commit]
 	gpgsign = true
+[core]
+	pager = less -F -X
