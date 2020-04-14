@@ -1,0 +1,8 @@
+[user]
+	email = 62725347+TziTziFly@users.noreply.github.com
+	name = Dave
+	signingkey = 602445F1ACB1625BFC082C37FD9D9D57F9745A50
+[alias]
+	co = checkout
+[commit]
+	gpgsign = true
