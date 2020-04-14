@@ -18,5 +18,12 @@
     algorithm = histogram
     tool = vimdiff
 
+[merge]
+    conflictstyle = diff3
+    defaultToUpstream = true
+    log = 50
+    tool = vimdiff
+
 [color]
     ui = true
+
