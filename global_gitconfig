@@ -4,6 +4,7 @@
 	signingkey = 602445F1ACB1625BFC082C37FD9D9D57F9745A50
 [alias]
 	co = checkout
+	l = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
 [commit]
 	gpgsign = true
 [core]
