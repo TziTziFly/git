@@ -9,6 +9,7 @@
 	gpgsign = true
 [core]
 	pager = less -F -X
+	excludesfile = ~/.config/git/global_gitignore
 [color]
     ui = true
 
