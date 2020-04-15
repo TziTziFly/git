@@ -30,8 +30,8 @@
   tool = vimdiff
 
 [push]
-    default = simple
-    followTags = true
+  default = simple
+  followTags = true
 
 [color]
   ui = true
