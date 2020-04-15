@@ -1,0 +1,5 @@
+#!/bin/sh
+
+echo "Checking for debug text in staged files..."
+
+git diff --cached | grep -iE 'DEBUG|console.log' && echo "\nDebug text found!" && exit 1 || echo "\nClear!" && exit 0
