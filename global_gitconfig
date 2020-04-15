@@ -29,6 +29,9 @@
   log = 50
   tool = vimdiff
 
+[rebase]
+  autostash = true
+
 [push]
   default = simple
   followTags = true
