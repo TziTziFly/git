@@ -1,7 +1,7 @@
 <h1 align="center">Git Config</h1>
 <br>
 
-Includes global .gitconfig, .gitignore and .git/hooks/pre-commit hook.
+Includes global `.gitconfig`, `.gitignore` and `.git/hooks/pre-commit` hook.
 
 Installation
 ------------
