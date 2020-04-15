@@ -41,5 +41,8 @@
   default = simple
   followTags = true
 
+[help]
+  autoCorrect = -1
+
 [color]
   ui = true
