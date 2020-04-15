@@ -1,22 +1,17 @@
+[core]
+  pager = less -F -X
+  excludesfile = ~/.config/git/global_gitignore
+
+[help]
+  autoCorrect = -1
+
+[color]
+  ui = true
+
 [user]
   email = 62725347+TziTziFly@users.noreply.github.com
   name = Dave
   signingkey = 602445F1ACB1625BFC082C37FD9D9D57F9745A50
-
-[alias]
-  co = checkout
-  l = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
-  d = diff --ignore-all-space --ignore-blank-lines --word-diff=color --color-moved=zebra --color-moved-ws=allow-indentation-change --find-renames
-  dc = diff --ignore-all-space --ignore-blank-lines --word-diff=color --color-moved=zebra --color-moved-ws=allow-indentation-change --find-renames --cached
-  pushhh = "!git push --set-upstream origin \"$(git rev-parse --abbrev-ref HEAD)\""
-  inithub = "!git remote add origin git@github.com:TziTziFly/$(basename $PWD) && git pushhh"
-
-[commit]
-  gpgsign = true
-
-[core]
-  pager = less -F -X
-  excludesfile = ~/.config/git/global_gitignore
 
 [mergetool "vimdiff"]
   cmd = nvim -d $BASE $LOCAL $REMOTE $MERGED 
@@ -37,12 +32,17 @@
 [rerere]
   enabled = true
 
+[commit]
+  gpgsign = true
+
 [push]
   default = simple
   followTags = true
 
-[help]
-  autoCorrect = -1
-
-[color]
-  ui = true
+[alias]
+  co = checkout
+  l = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+  d = diff --ignore-all-space --ignore-blank-lines --word-diff=color --color-moved=zebra --color-moved-ws=allow-indentation-change --find-renames
+  dc = diff --ignore-all-space --ignore-blank-lines --word-diff=color --color-moved=zebra --color-moved-ws=allow-indentation-change --find-renames --cached
+  pushhh = "!git push --set-upstream origin \"$(git rev-parse --abbrev-ref HEAD)\""
+  inithub = "!git remote add origin git@github.com:TziTziFly/$(basename $PWD) && git pushhh"
